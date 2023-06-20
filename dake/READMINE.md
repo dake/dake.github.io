@@ -10,3 +10,7 @@
 # 新建文章
 * hugo new posts/README.md
 
+
+# 教程
+* https://www.pseudoyu.com/en/2022/05/29/deploy_your_blog_using_hugo_and_github_action/
+
