@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://dake.life/sitemap.xml
+Sitemap: https://www.dake.life/sitemap.xml
