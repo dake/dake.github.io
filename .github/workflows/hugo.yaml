@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - main
+  schedule:
+    # Runs everyday at 8:00 AM
+    - cron: "0 0 * * *"
 jobs:
   build-deploy:
     #    runs-on: ubuntu-20.04
@@ -10,19 +13,20 @@ jobs:
     steps:
       - name: Check out source
         uses: actions/checkout@v2
-
-      - name: Setup hugo
-        uses: actions/configure-pages@v3
         with:
-          #          hugo-version: "latest" # 可以修改为你使用的 Hugo 版本
-          hugo-version: "0.113.0" #
-          extended: true # 设置是否需要 extended 版本
+          submodules: true
+          fetch-depth: 0
 
-      - name: Build
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "latest"
+
+      - name: Build Web
         run: hugo
 
       - name: Deploy
-        uses: actions/deploy-pages@v2
+        uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }} # 另外还支持 deploy_token 和 github_token
           external_repository: dake/dake.github.io # 修改为你的 GitHub Pages 仓库
@@ -31,3 +35,4 @@ jobs:
           publish_branch: master
           # 如果使用自定义域名，还需要添加下面一行配置
           cname: www.dake.life
+
