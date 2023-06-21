@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.dake.life/</loc>
+    <loc>https://dake.life/</loc>
     <lastmod>2023-06-12T14:56:54+08:00</lastmod>
   </url><url>
-    <loc>http://www.dake.life/posts/</loc>
+    <loc>https://dake.life/posts/</loc>
     <lastmod>2023-06-12T14:56:54+08:00</lastmod>
   </url><url>
-    <loc>http://www.dake.life/posts/hello-world/</loc>
+    <loc>https://dake.life/posts/hello-world/</loc>
     <lastmod>2023-06-12T14:56:54+08:00</lastmod>
   </url><url>
-    <loc>http://www.dake.life/categories/</loc>
+    <loc>https://dake.life/categories/</loc>
   </url><url>
-    <loc>http://www.dake.life/tags/</loc>
+    <loc>https://dake.life/tags/</loc>
   </url>
 </urlset>
