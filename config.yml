@@ -1,4 +1,4 @@
-baseURL: "https://www.dake.life/"
+baseURL: "https://dake.life/"
 title: ExampleSite
 paginate: 5
 theme: PaperMod
